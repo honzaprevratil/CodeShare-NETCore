@@ -5,6 +5,10 @@ VisualStudioVersion = 15.0.28307.329
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CodeShare-NETCore", "CodeShare-NETCore\CodeShare-NETCore.csproj", "{45B0B4CC-6CEC-476E-897C-28B9249F5C3D}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CodeShare-Library", "ClassLibrary1\CodeShare-Library.csproj", "{01F631F7-A309-4980-90FC-FD284B30F542}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CodeShare-WPF", "CodeShare-WPF\CodeShare-WPF.csproj", "{9DB43501-EC58-43F8-B7E9-EE55B279C47D}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +19,14 @@ Global
 		{45B0B4CC-6CEC-476E-897C-28B9249F5C3D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{45B0B4CC-6CEC-476E-897C-28B9249F5C3D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{45B0B4CC-6CEC-476E-897C-28B9249F5C3D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{01F631F7-A309-4980-90FC-FD284B30F542}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{01F631F7-A309-4980-90FC-FD284B30F542}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{01F631F7-A309-4980-90FC-FD284B30F542}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{01F631F7-A309-4980-90FC-FD284B30F542}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9DB43501-EC58-43F8-B7E9-EE55B279C47D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9DB43501-EC58-43F8-B7E9-EE55B279C47D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9DB43501-EC58-43F8-B7E9-EE55B279C47D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9DB43501-EC58-43F8-B7E9-EE55B279C47D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

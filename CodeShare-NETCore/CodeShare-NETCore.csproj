@@ -6,4 +6,8 @@
     <RootNamespace>CodeShare_NETCore</RootNamespace>
   </PropertyGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\ClassLibrary1\CodeShare-Library.csproj" />
+  </ItemGroup>
+
 </Project>
