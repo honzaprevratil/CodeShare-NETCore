@@ -12,18 +12,26 @@ namespace ClassLibrary1
         private const string dataFile = @"D:\source\repos\CodeShare-NETCore\score.csv";
         public List<Score> ScoresCache { get; set; } = new List<Score>();
 
-        public void ReadScores(bool useHeader = true, string path = dataFile)
+        public string ReadScores(bool useHeader = true, string path = dataFile)
         {
             if (!File.Exists(path))
-                return;
+                return "File not found";
 
             using (var reader = new StreamReader(path))
             using (var csv = new CsvReader(reader))
             {
                 csv.Configuration.PrepareHeaderForMatch = (string header, int index) => header.ToLower();
-                IEnumerable<Score> records = csv.GetRecords<Score>();
-                records.ToList().ForEach(x => ScoresCache.Add(x));
+                try {
+                    IEnumerable<Score> records = csv.GetRecords<Score>();
+                    records.ToList().ForEach(x => ScoresCache.Add(x));
+                }
+                catch (Exception e)
+                {
+                    return "File error";
+                } 
             }
+
+            return "File loaded";
 
         }
 
