@@ -1,4 +1,4 @@
-﻿using ClassLibrary1;
+﻿using ConvertorLib;
 using System;
 using System.Collections.Generic;
 
@@ -6,20 +6,17 @@ namespace CodeShare_NETCore
 {
     class Program
     {
+        public static List<Score> DataList = new List<Score>();
         static void Main(string[] args)
         {
             Console.WriteLine("Hello World!");
-            MyCsvhelper myCsvhelper = new MyCsvhelper();
 
-            myCsvhelper.ReadScores();
+            // TEST
+            string input = @"D:\source\repos\CodeShare-NETCore\score.csv";      // input path text;
+            string output = @"D:\source\repos\CodeShare-NETCore\score.json";    // output path text;
 
-            myCsvhelper.ScoresCache.Add(new Score("Player1", 155));
-            myCsvhelper.ScoresCache.Add(new Score("Player2", 179));
-            myCsvhelper.ScoresCache.Add(new Score("Nyro", 6969));
-
-            myCsvhelper.WriteScores();
-
-
+            List<Score> DataList = Convertor.Read<Score>(input);
+            //Convertor.Convert(output, input); //reverse test
 
             Console.ReadLine();
         }
